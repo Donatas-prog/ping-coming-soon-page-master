@@ -1,11 +1,16 @@
-.container {
-    width: 1440px;
+body {
+    font: 1em sans-serif;
+    
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
+.container {
+    max-width: 1440px;
+}
 
-
-
- .paragraph {
+.paragraph {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,17 +18,17 @@
     
 } 
 
-
-
- .forma {
+.forma {
     display: flex;
     flex-direction: row; 
     
 }   
+.title {
+    display: flex;
+    font-size: 40px;
+}
 
-
-
-.fonts {
+.main-title {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -32,19 +37,29 @@
 .weight1 {
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 300;
+    color: hsl(0, 0%, 59%);
+
 }
 
-h3 {
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 300;
+.soon {
+    margin-left: .5rem;
+    font-weight: 600;
 }
-h5 {
+
+.subscribe {
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 300;
+    font-size: 1rem;
+}
+.copyright {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    font-size: .7rem;
 }
 img {
-    margin-top: 3rem;
-    align-items: center;
+    margin: 2rem 0rem 3rem 0rem;
+    
 }
 button {
     background-color: hsl(223, 87%, 63%);
@@ -53,25 +68,24 @@ button {
     width: 13rem;
     height: 2.5rem;
     margin-left: 1rem;
+    border: none;
+    box-shadow: 1px 1px 4px 1px hsl(0, 0%, 59%);
 }
-input {
+#mail {
     border-radius: 2rem;
     width: 21rem;
     height: 2.5rem;
+    border: 1px solid hsl(0, 0%, 59%);
+    opacity: .4;
+    
+    
+}
+input::placeholder {
+    color: hsl(0, 0%, 59%);
 }
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    
-    body {
-        font: 1em sans-serif;
-        
-        padding: 0;
-        margin: 0 auto;
-    }
-
-
-
     
 
     input[type=email]{
@@ -111,8 +125,31 @@ input {
       .error.active {
         padding: 0.3em;
       }
+      .fa-facebook-f {
+        font-size: .2rem;
+        /* border-color: hsl(223, 87%, 63%); */
+        width: .6rem;
+        
+      }
+      .fa-brands {
+        font-weight: 900;
+        color: hsl(223, 87%, 63%);
+        
+      }
+      .fa-brands {
+        border: 1px solid hsl(0, 1%, 85%);
+        padding: .5rem;
+        border-radius: 10rem;
+        margin: .3rem;
+        font-size: .7rem;
+      }
+      .fa-brands:hover {
+        color: white;
+        background-color: hsl(223, 87%, 63%);
+        border: none;
+      }
 
-      @media all and (max-width: 500px) {
+      @media all and (max-width: 578px) {
 
         .container {
             width: 100%;
@@ -128,10 +165,10 @@ input {
             
         } 
         button {
-            width: 350px;
+            width: 100%;
             margin: 1rem;
         } 
-         .first-image, img {
+         .first-image img {
              
             max-width: 100%;
             
